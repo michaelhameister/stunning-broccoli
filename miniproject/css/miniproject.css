@@ -1,0 +1,84 @@
+/* Global Styles : DO NOT EDIT */
+
+.clock {
+	margin-top: -521px;
+	margin-left: 580px;
+    width: 350px;
+    height: 370px;
+    background: url(../images/clock.png);
+		position: fixed;
+	}
+.square {
+	width: 400px;
+	height: 600px;
+	background: black;
+	margin-left: 550px;
+	margin-top: 150px;
+}
+.circle {
+	animation-duration: 5s;
+	animation-name: createcircle;
+	position: relative;
+	width: 350px;
+	height: 350px;
+	color: #2E9AFE;
+	background-color: #2E9AFE;
+	border-radius: 500px;
+	margin-top: -540px;
+	margin-left: 575px;
+}
+p {
+ font-family: 'Cantata One', serif;
+ color: white;
+ margin-top: 15px;
+ margin-left: 580px;
+ font-size: 60px;
+}
+.p2 {
+font-family: 'Cantata One', serif;
+ color: #2E9AFE;
+ margin-top: 0px;
+ margin-left: 640px;
+ font-size: 60px;
+ animation: p2_fade 3s;
+}
+.p3 {
+	font-family: 'Cantata One', serif;
+  color: white;
+	margin-top: 15px;
+  margin-left: 590px;
+  font-size: 15px;
+	position: relative;
+	animation: p3_move 3s;
+}
+
+@keyframes createcircle {
+    from{
+        height:0px;
+        width: 0px;}
+    to{
+        height: 350px;
+        width: 350px;}
+}
+
+@keyframes p2_fade {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+.clock:hover{
+-webkit-animation: rotation 8s infinite linear;
+}
+
+@-webkit-keyframes  rotation{
+from {
+-webkit-transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(360deg);
+}
+}
+@keyframes p3_move {
+0% {left: -300px;}
+100% {left: 0px;}
+}
